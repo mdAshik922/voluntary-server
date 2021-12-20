@@ -17,7 +17,8 @@ async function run() {
     try {
       await client.connect();
       const database = client.db('Volunteer_work');
-      const VolunteerCollection = database.collection('Volunteer ');
+      const VolunteerCollection = database.collection('Volunteer '); 
+      const userCollection = database.collection('Volunteer_User '); 
     
 
      app.get('/Volunteers', async(req, res) =>{
